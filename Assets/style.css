@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+header .navbar{
+    background-color: #2C3E50;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-around;
+}
+
+header .navbar h2{
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+header .navbar .menu{
+    display: flex;
+    list-style: none;
+}
+
+header .navbar .menu li a{
+    text-decoration: none;
+    padding-left: 40px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header .navbar .menu li a:hover{
+    color:#1abc9c ;
+}
+
+main{
+    background-color: #1abc9c;
+    color: white;
+    padding: 90px 0px ;
+}
+
+main .photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1{
+    text-align: center;
+    font-weight:bold;
+    font-size: 4rem;
+    padding: 20px 0px;
+}
+
+main .star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+main .star span{
+    height: 5px;
+    width: 90px;
+    margin: 0px 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+main .star i{
+    font-size: 40px;
+}
+main p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+main .photo img{
+    height: 240px;
+}
+
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section h1{
+    text-align: center;
+    padding: 70px 0px 20px 0px ;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2C3E50;
+}
+
+section .star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .star span{
+    height: 5px;
+    width: 90px;
+    background-color: #2C3E50;
+    margin: 0px 10px;
+    border: 10px;
+}
+
+section .star i{
+    font-size: 40px;
+    color:#2C3E50 ;
+}
+
+.poster{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 220px;
+}
+.poster .cards .card{
+    width: 400px;
+    height: 288px;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 20px;
+    position: relative;
+    cursor: pointer;
+    background-color: #1abc9c00 ;
+}
+
+.poster .cards .card i{
+    position: absolute;
+    color: white;
+    top: 116px;
+    right: 165px;
+    font-size: 5rem;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.poster .cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.poster .cards .card img{
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+.poster .cards .card:hover i{
+    opacity: 1;
+    
+}
+
+.poster .cards .card:hover img{
+    opacity: 0.2;
+}
+
+.poster .cards .card:hover{
+    background-color: #1abc9c;
+}
+
+.abouts{
+    background-color: #1abc9c;
+    margin-top: 90px;
+}
+
+.abouts h1{
+    text-align: center;
+    padding: 90px 0px 20px 0px ;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.abouts .star span{
+    height: 5px;
+    width: 90px;
+    background-color: white;
+    margin: 0px 10px;
+    border: 10px;
+}
+
+.abouts .star i{
+    font-size: 40px;
+    color: white ;
+}
+
+.abouts .about .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 500px;
+    padding-right: 500px;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.abouts .about .text p{
+    padding: 0px 20px 0px 20px;
+}
+
+
+
+.abouts .about .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 60px 0px;
+}
+
+.abouts .about .button button{
+    background-color: #1abc9c;
+    font-size: 20px;
+    color: white;
+    padding: 20px 40px;
+    border:2px solid white;
+    border-radius: 6px;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+
+.abouts .about .button button i{
+    padding-right: 5px;
+}
+
+.abouts .about .button button:hover{
+    background-color: white;
+    color: #2C3E50;
+}
+
+.contacs .contact h1{
+    text-align: center;
+    padding: 90px 0px 20px 0px ;
+    font-size: 3rem;
+    font-weight: bold;
+    color:#2C3E50;
+}
+
+.contacts .contact .lab{
+    margin-top: 50px;
+}
+
+footer{
+    margin-top: 30px;
+    background-color: #2C3E50;
+}
+
+
+.contacts .contact .lab .labels label{
+    font-size: 1.2rem;
+    color: #2c3e50d2;
+}
+
+.contacts .contact .lab .labels input{
+    border: none;
+    border-bottom:1px solid#2c3e50ca;
+    width: 800px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.contacts .contact .lab .labels input:focus{
+outline: none;
+}
+
+.contacts .contact .btn button{
+    background-color: #28c5a6;
+    color: white;
+    padding: 20px 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+footer{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+footer .foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .foot .location {
+    color: white;
+}
+
+footer .foot .location h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer .foot .location h4{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+footer .foot .around {
+    color: white;
+}
+
+footer .foot .around .icons{
+    margin-top: 10px;
+}
+
+footer .foot .around .icons i{
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 50%;
+    margin-left: 7px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+footer .foot .around .icons i:hover{
+    background-color: white;
+    color: #2C3E50;
+}
+
+footer .foot .freelance h2{
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer .foot .freelance h4{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+footer .foot .freelance .h4 a{
+    color: #1abc9c;
+
+}
+
+footer .foot .freelance .h4 a:hover{
+    color: #0a6251;
+}
+
+.end{
+    background-color: rgb(29, 28, 28);
+    padding: 30px;
+}
+.end p{
+    text-align: center;
+    color: white;
+}
